@@ -2,7 +2,7 @@
 
 Turn a single OpenClaw session into a **full application and game development studio** with coordinated AI agents.
 
-**40+ agents. 60+ skills. One coordinated AI team.**
+**18 skills. 14 agents. Coordinated AI team.**
 
 Built for OpenClaw with MiniMax MCP — uses `sessions_spawn` for subagent orchestration.
 
@@ -12,8 +12,8 @@ Built for OpenClaw with MiniMax MCP — uses `sessions_spawn` for subagent orche
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| **Agents** | 43 | 4 Directors → 7 Leads → 32 Specialists |
-| **Skills** | 62 | Slash commands covering full dev lifecycle |
+| **Agents** | 14 | 4 Directors → 4 Leads → 6 Specialists |
+| **Skills** | 18 | Slash commands covering full dev lifecycle |
 | **Hooks** | 3 | Automated validation and gap detection |
 | **Rules** | 9 | Path-scoped coding standards |
 | **Gates** | 8 | Director review checkpoints |
@@ -28,12 +28,10 @@ Tier 1 — Directors
 
 Tier 2 — Leads
   product-manager     frontend-dev        backend-dev           qa-lead
-  game-designer      [more specialists]
 
 Tier 3 — Specialists
-  market-analyst     ux-designer          mobile-dev           data-engineer
-  security-engineer  qa-tester           gameplay-programmer   engine-programmer
-  [more...]
+  game-designer      art-director        narrative-director
+  performance-analyst security-engineer  qa-tester
 ```
 
 ---
@@ -63,13 +61,14 @@ cp -r ~/.openclaw/workspace/dev-studio/.claude .
 
 | Category | Skills |
 |----------|--------|
-| **Onboarding** | `/start` `/onboard` `/project-stage-detect` |
-| **Product** | `/spec` `/brainstorm` `/user-research` `/design-system` `/map-systems` |
-| **Game Dev** | `/game-brainstorm` `/gdd` `/balance-check` |
-| **Architecture** | `/create-architecture` `/architecture-decision` `/code-review` |
+| **Onboarding** | `/start` |
+| **Product** | `/spec` `/brainstorm` `/design-system` `/estimate` |
+| **Game Dev** | `/balance-check` |
+| **Architecture** | `/architecture-decision` `/code-review` `/tech-debt` |
 | **Production** | `/sprint-plan` `/scope-check` `/milestone-review` |
-| **QA** | `/qa-plan` `/smoke-check` `/test-setup` |
-| **Release** | `/release-checklist` `/changelog` `/patch-notes` |
+| **QA** | `/qa-plan` `/test-setup` `/test-helpers` `/smoke-check` |
+| **Reviews** | `/design-review` |
+| **Gates** | `/gate-check` |
 
 ---
 

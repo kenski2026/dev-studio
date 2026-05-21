@@ -1,7 +1,7 @@
 # DevStudio — AI Agent Development Studio
 
 Turn a single OpenClaw session into a full application and game development studio.
-**40+ agents. 60+ skills. One coordinated AI team.**
+**14 agents. 18 skills. One coordinated AI team.**
 
 Built for MiniMax MCP — uses `sessions_spawn` for subagents, structured prompts for specialists.
 
@@ -11,10 +11,10 @@ Built for MiniMax MCP — uses `sessions_spawn` for subagents, structured prompt
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| **Agents** | 43 | Tier 1 Directors (Opus) → Tier 2 Leads (Sonnet) → Tier 3 Specialists |
-| **Skills** | 62 | Slash commands covering full product + game dev lifecycle |
-| **Hooks** | 10 | Automated validation on commits, pushes, session lifecycle |
-| **Rules** | 9 | Path-scoped coding standards enforced per domain |
+| **Agents** | 14 | Tier 1 Directors → Tier 2 Leads → Tier 3 Specialists |
+| **Skills** | 18 | Slash commands covering full product + game dev lifecycle |
+| **Hooks** | 3 | Automated validation on commits, gap detection, session recovery |
+| **Rules** | 2 | Path-scoped coding standards enforced per domain |
 | **Gates** | 8 | Director review checkpoints before phase transitions |
 
 ---
@@ -27,35 +27,30 @@ Tier 1 — Directors (minimax/MiniMax-M2.7 or higher)
 
 Tier 2 — Department Leads (minimax/MiniMax-M2.7)
   product-manager      ux-lead               engineering-lead       qa-lead
-  art-director        narrative-director     release-manager
 
 Tier 3 — Specialists
   market-analyst      ux-designer           frontend-dev           backend-dev
   mobile-dev          data-engineer         security-engineer     qa-tester
   game-designer       gameplay-programmer   engine-programmer      ui-programmer
-  level-designer      systems-designer      technical-artist       sound-designer
-  writer              world-builder         devops-engineer        performance-analyst
 ```
 
 ---
 
 ## Skills — Type `/` to access
 
-**Onboarding:** `/start` `/onboard` `/project-stage-detect` `/help`
+**Onboarding:** `/start`
 
-**Product (Apps):** `/brainstorm` `/spec` `/user-research` `/design-system` `/map-systems` `/estimate` `/sprint-plan`
+**Product (Apps):** `/brainstorm` `/spec` `/user-research` `/design-system` `/map-systems` `/estimate`
 
-**Game Dev:** `/game-brainstorm` `/gdd` `/balance-check` `/playtest-report`
+**Game Dev:** `/brainstorm` `/balance-check`
 
-**Architecture & Code:** `/create-architecture` `/architecture-decision` `/code-review` `/tech-debt` `/security-audit`
+**Architecture & Code:** `/create-architecture` `/architecture-decision` `/code-review` `/tech-debt`
 
-**Reviews:** `/design-review` `/ux-review` `/consistency-check` `/gate-check`
+**Reviews:** `/design-review` `/gate-check`
 
-**Production:** `/sprint-status` `/milestone-review` `/scope-check` `/retrospective`
+**Production:** `/sprint-plan` `/milestone-review` `/scope-check`
 
 **QA & Testing:** `/qa-plan` `/test-setup` `/test-helpers` `/smoke-check`
-
-**Release:** `/release-checklist` `/changelog` `/patch-notes` `/hotfix`
 
 ---
 
