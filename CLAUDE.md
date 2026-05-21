@@ -1,7 +1,7 @@
 # DevStudio — AI Agent Development Studio
 
 Turn a single OpenClaw session into a full application and game development studio.
-**14 agents. 18 skills. One coordinated AI team.**
+**14 agents. 19 skills. One coordinated AI team.**
 
 Built for MiniMax MCP — uses `sessions_spawn` for subagents, structured prompts for specialists.
 
@@ -12,9 +12,9 @@ Built for MiniMax MCP — uses `sessions_spawn` for subagents, structured prompt
 | Category | Count | Description |
 |----------|-------|-------------|
 | **Agents** | 14 | Tier 1 Directors → Tier 2 Leads → Tier 3 Specialists |
-| **Skills** | 18 | Slash commands covering full product + game dev lifecycle |
+| **Skills** | 19 | Slash commands covering full product + game dev lifecycle |
 | **Hooks** | 3 | Automated validation on commits, gap detection, session recovery |
-| **Rules** | 2 | Path-scoped coding standards enforced per domain |
+| **Rules** | 2 | Path-scoped coding standards (app-code, gameplay-code) |
 | **Gates** | 8 | Director review checkpoints before phase transitions |
 
 ---
@@ -22,33 +22,33 @@ Built for MiniMax MCP — uses `sessions_spawn` for subagents, structured prompt
 ## Studio Hierarchy
 
 ```
-Tier 1 — Directors (minimax/MiniMax-M2.7 or higher)
+Tier 1 — Directors (minimax/MiniMax-M2.7)
   product-director     creative-director     technical-director     producer
 
 Tier 2 — Department Leads (minimax/MiniMax-M2.7)
-  product-manager      ux-lead               engineering-lead       qa-lead
+  product-manager      frontend-dev          backend-dev            qa-lead
 
 Tier 3 — Specialists
-  market-analyst      ux-designer           frontend-dev           backend-dev
-  mobile-dev          data-engineer         security-engineer     qa-tester
-  game-designer       gameplay-programmer   engine-programmer      ui-programmer
+  game-designer        art-director          narrative-director
+  performance-analyst  security-engineer     qa-tester
+  ux-designer          mobile-dev
 ```
 
 ---
 
 ## Skills — Type `/` to access
 
-**Onboarding:** `/start`
+**Onboarding:** `/start` `/onboard`
 
-**Product (Apps):** `/brainstorm` `/spec` `/user-research` `/design-system` `/map-systems` `/estimate`
+**Product:** `/brainstorm` `/spec` `/design-system` `/estimate`
 
-**Game Dev:** `/brainstorm` `/balance-check`
+**Game Dev:** `/balance-check`
 
-**Architecture & Code:** `/create-architecture` `/architecture-decision` `/code-review` `/tech-debt`
+**Architecture & Code:** `/architecture-decision` `/code-review` `/tech-debt`
 
 **Reviews:** `/design-review` `/gate-check`
 
-**Production:** `/sprint-plan` `/milestone-review` `/scope-check`
+**Production:** `/sprint-plan` `/scope-check` `/milestone-review`
 
 **QA & Testing:** `/qa-plan` `/test-setup` `/test-helpers` `/smoke-check`
 

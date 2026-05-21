@@ -2,7 +2,7 @@
 
 Turn a single OpenClaw session into a **full application and game development studio** with coordinated AI agents.
 
-**18 skills. 14 agents. Coordinated AI team.**
+**19 skills. 14 agents. Coordinated AI team.**
 
 Built for OpenClaw with MiniMax MCP — uses `sessions_spawn` for subagent orchestration.
 
@@ -13,9 +13,9 @@ Built for OpenClaw with MiniMax MCP — uses `sessions_spawn` for subagent orche
 | Category | Count | Description |
 |----------|-------|-------------|
 | **Agents** | 14 | 4 Directors → 4 Leads → 6 Specialists |
-| **Skills** | 18 | Slash commands covering full dev lifecycle |
+| **Skills** | 19 | Slash commands covering full dev lifecycle |
 | **Hooks** | 3 | Automated validation and gap detection |
-| **Rules** | 9 | Path-scoped coding standards |
+| **Rules** | 2 | Path-scoped coding standards (app, game) |
 | **Gates** | 8 | Director review checkpoints |
 
 ---
@@ -27,11 +27,12 @@ Tier 1 — Directors
   product-director    creative-director    technical-director    producer
 
 Tier 2 — Leads
-  product-manager     frontend-dev        backend-dev           qa-lead
+  product-manager     frontend-dev         backend-dev           qa-lead
 
 Tier 3 — Specialists
-  game-designer      art-director        narrative-director
-  performance-analyst security-engineer  qa-tester
+  game-designer       art-director         narrative-director
+  performance-analyst security-engineer     qa-tester
+  ux-designer         mobile-dev
 ```
 
 ---
@@ -40,19 +41,16 @@ Tier 3 — Specialists
 
 ### New Project
 ```bash
-# Copy the template
 cp -r ~/.openclaw/workspace/dev-studio my-project
 cd my-project
-
-# Open OpenClaw and run:
-/start
+# Then run /start in OpenClaw
 ```
 
 ### Adopt Existing Project
 ```bash
 cd my-existing-project
 cp -r ~/.openclaw/workspace/dev-studio/.claude .
-/onboard
+# Then run /onboard in OpenClaw
 ```
 
 ---
@@ -61,7 +59,7 @@ cp -r ~/.openclaw/workspace/dev-studio/.claude .
 
 | Category | Skills |
 |----------|--------|
-| **Onboarding** | `/start` |
+| **Onboarding** | `/start` `/onboard` |
 | **Product** | `/spec` `/brainstorm` `/design-system` `/estimate` |
 | **Game Dev** | `/balance-check` |
 | **Architecture** | `/architecture-decision` `/code-review` `/tech-debt` |
